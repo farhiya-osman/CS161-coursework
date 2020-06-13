@@ -1,0 +1,98 @@
+#include <iostream> 
+#include <string> 
+#include <cstring>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std ;
+
+int get_vowelsandConstants(string &sentance ){
+  
+int vowelcount ; 
+int vcount = 0; 
+int ccount = 0; 
+
+for (int i = 0; i < sentance[i] != '\0' ; ++i)
+{
+   if(sentance[i] == 'a' || sentance[i] == 'i' || sentance[i] == 'e' || sentance[i] == 'o'){
+      vcount++ ;
+   } 
+   else{
+      ccount ++ ;
+   }
+   
+}
+cout << "The number of vowels are: " << vcount << endl;
+cout << "The number of constants are: " << ccount << endl; 
+
+if(vcount == ccount ){
+  cout << "The number of vowels equal the number of constants: "<< endl ; 
+}
+else
+{
+  cout << "The number of vowels do not equal the number of constants: " << endl; 
+}
+
+
+}
+int get_palindrome(string &sentance){
+   int red = sentance.length() ;
+ for(int i = 0; i<sentance.length(); i++ ){
+    if(sentance[i] != sentance[red-i-1]){
+         
+
+}
+}
+ if (purple = 2 ){
+   cout << "This is  a palindrome" << endl ; 
+ }
+ else{ 
+   cout << "This is not a palindrome" << endl; 
+ }
+}
+int letter_Swap(string &sentance) {
+
+
+
+
+
+
+
+
+
+
+}
+int main() {
+int green;    
+ do 
+{
+
+  cout << "Enter a sentance or paragraph: " << endl ; 
+  string sentance ; 
+  getline(cin,sentance);
+  cout << "Would you like to count the vowels and constants(1), Letter swap(2), reverse the string(3),palindrome detector(4), and words frequency(5)" << endl;  
+  int userschoice; 
+  cin >> userschoice; 
+    if(userschoice == 1 ){
+       get_vowelsandConstants(sentance); 
+    } 
+    else if (userschoice == 2){ 
+    }
+    else if( userschoice == 3){
+    }
+    else if(userschoice == 4){
+    get_palindrome(sentance) ; 
+    }
+    else 
+    {
+    }  
+   cout << "Do you want another operation to be performed? (0-No and 1- Yes)" << endl;
+   cin>> green;
+}
+while ( green == 1);
+
+
+
+
+
+}
